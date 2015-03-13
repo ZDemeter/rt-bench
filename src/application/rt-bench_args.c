@@ -173,7 +173,7 @@ static void parse_thread_phases(struct json_object *task_phases, thread_data_t *
       resource_id = get_in_object(phase, "memory", FALSE);
       data->phases[idx].resource_id = get_int_value_from(phase, "memory", FALSE, 0);
     }
-    if (ph == SLEEP) {
+    else if (ph == SLEEP) {
       duration = get_in_object(phase, "duration", FALSE);
       data->phases[idx].usage = usec_to_timespec(get_int_value_from(phase, "duration", FALSE, 0));
     }
