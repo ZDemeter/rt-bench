@@ -24,6 +24,10 @@ static inline busywait(struct timespec *to) {
   }
 }
 
+void memory (int ind, ...) {
+  // TODO: implement the memory phase
+}
+
 void sleep_for (int ind, ...) {
   struct timespec *t_sleep, t_now;
   va_list argp;
