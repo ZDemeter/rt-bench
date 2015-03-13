@@ -25,6 +25,15 @@ static inline busywait(struct timespec *to) {
 }
 
 void memory (int ind, ...) {
+  int memory_used;
+  int loops;
+  struct timespec *t_spec;
+  va_list argp;
+  va_start(argp, ind);
+  t_spec = va_arg(argp, struct timespec*);
+  loops = timespec_to_usec(t_spec); // this contains the amount of mathematical operations to be done
+  memory_used = va_arg(argp, int); // this contains the amount of memory to be allocated
+  va_end(argp);
   // TODO: implement the memory phase
 }
 
