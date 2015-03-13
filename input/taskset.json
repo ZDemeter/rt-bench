@@ -13,7 +13,8 @@
         "l1": { "loops": 1000, "res": 2 },
         "l2": { "loops": 3000, "res": 1 },
         "l3": { "loops": 1000, "res": 0 },
-        "c1": { "loops": 5000 }
+        "c1": { "loops": 5000 },
+        "m0": { "loops": 1000, "memory": 100 }
       }
     },
     "thread2": {
