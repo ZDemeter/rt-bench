@@ -27,14 +27,24 @@ static inline busywait(struct timespec *to) {
 void memory (int ind, ...) {
   int memory_used;
   int loops;
+  double *accumulator;
   struct timespec *t_spec;
   va_list argp;
   va_start(argp, ind);
   t_spec = va_arg(argp, struct timespec*);
-  loops = timespec_to_usec(t_spec); // this contains the amount of mathematical operations to be done
   memory_used = va_arg(argp, int); // this contains the amount of memory to be allocated
+  va_end(argp); 
+  loops = timespec_to_usec(t_spec); // this contains the amount of mathematical operations to be done
 
-  va_end(argp);
+  accumulator = malloc(sizeof(double));
+
+  for (i = 0; i < loops; i++) {
+    *accumulator += 0.5;
+    *accumulator -= floor(accumulator);
+  }
+
+  free(accumulator);
+
   // TODO: implement the memory phase
 }
 
