@@ -45,7 +45,7 @@ fi
 # ------------------------------------------------------------
 printf "[LAUNCH] Checking rt-bench presence on remote host ..."
 ssh -p ${REMOTE_port} ${REMOTE_username}@${REMOTE_ip} \
-  'if [ ! -d "rt-bench" ]; then git clone https://github.com/martinamaggio/rt-bench.git &>/dev/null; fi'
+  'if [ ! -d "rt-bench" ]; then git clone https://github.com/zdemeter/rt-bench.git &>/dev/null; fi'
 printf " done\n"
 
 printf "[LAUNCH] Checking rt-bench compilation on remote host ..."
