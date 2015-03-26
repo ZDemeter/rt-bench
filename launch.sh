@@ -8,7 +8,7 @@
 # running
 # echo -1 > /proc/sys/kernel/sched_rt_runtime_us
 # on the remote machine, before running the script.
-# --------------------------------------------------------------------
+# --------bump--------------------------------------------------------
 
 # Variable declarations
 APP_binary="./bin/application"
