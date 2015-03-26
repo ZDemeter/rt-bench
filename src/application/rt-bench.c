@@ -36,16 +36,22 @@ void memory (int ind, ...) {
   va_end(argp); 
   loops = timespec_to_usec(t_spec); // this contains the amount of mathematical operations to be done
 
-  accumulator = malloc(sizeof(double));
 
-  for (i = 0; i < loops; i++) {
-    *accumulator += 0.5;
-    *accumulator -= floor(accumulator);
+/*-----Alt 1-----*/
+  accumulator = malloc(sizeof(double)); //Only allocates space for one double.
+  for (i = 0; i < loops; i++) {         //Have my doubts here since our second 
+    *accumulator += 0.5;                //variable is supposed to be amount of memory.
+    *accumulator -= floor(*accumulator);
   }
-
+/*-----Alt 2-----*/
+  accumulator = malloc(memory_used*sizeof(double));
+  for (i = 0; i < loops; i++) {
+    accumulator[i] += 0.5;                    //Doesn't really accomplish anything. Really.
+    accumulator[i] -= floor(accumulator[i]);  //I mean even less than previous. But uses 100 memory "slots"...
+  }
+/*---------------*/
   free(accumulator);
 
-  // TODO: implement the memory phase
 }
 
 void sleep_for (int ind, ...) {
