@@ -35,6 +35,7 @@ void memory (int ind, ...) {
   loops = timespec_to_usec(t_spec); // this contains the amount of mathematical operations to be done
   memory_used = va_arg(argp, int); // this contains the amount of memory to be allocated
   change = va_arg(argp, int);
+  printf("this seems like a stupid thing to do\n")
   va_end(argp);
   // TODO: implement the memory phase
 }
