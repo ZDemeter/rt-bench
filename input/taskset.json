@@ -3,24 +3,24 @@
   "tasks": {
     "thread1": {
       "priority": 10,
-      "cpus": [0],
+      "cpus": [1],
       "phases": {
-        "c0": { "loops": 100000 },
-        "l0": { "loops": 200000, "res": 0 },
-        "m0": { "loops": 100000, "memory": 100 }
+        "c0": { "loops": 1000 },
+        "l0": { "loops": 2000, "res": 0 },
+        "m0": { "loops": 1000, "memory": 100 }
       }
     },
     "thread2": {
       "priority": 10,
-      "cpus": [0],
+      "cpus": [0,1],
       "phases": {
-        "c0": { "loops": 500000 },
-        "l0": { "loops": 100000, "res": 2 }
+        "c0": { "loops": 5000 },
+        "l0": { "loops": 10000, "res": 2 }
       }
     }
   },
   "global": {
-    "default_policy": "SCHED_OTHER",
+    "default_policy": "SCHED_FIFO",
     "duration": 10,
     "logdir": "./",
     "logbasename": "rtbench",
