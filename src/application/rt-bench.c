@@ -38,11 +38,11 @@ void memory (int ind, ...) {
 
 
 /*-----Alt 1-----*/
-  accumulator = malloc(sizeof(double)); //Only allocates space for one double.
-  for (i = 0; i < loops; i++) {         //Have my doubts here since our second 
-    *accumulator += 0.5;                //variable is supposed to be amount of memory.
-    *accumulator -= floor(*accumulator);
-  }
+  // accumulator = malloc(sizeof(double)); //Only allocates space for one double.
+  // for (i = 0; i < loops; i++) {         //Have my doubts here since our second 
+  //   *accumulator += 0.5;                //variable is supposed to be amount of memory.
+  //   *accumulator -= floor(*accumulator);
+  // }
 /*-----Alt 2-----*/
   accumulator = malloc(memory_used*sizeof(double));
   for (i = 0; i < loops; i++) {
