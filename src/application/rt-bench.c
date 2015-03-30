@@ -25,8 +25,7 @@ static inline busywait(struct timespec *to) {
 }
 
 void memory (int ind, ...) {
-  int memory_used;
-  int loops;
+  int memory_used, loops, i;
   double *accumulator;
   struct timespec *t_spec;
   va_list argp;
@@ -37,13 +36,7 @@ void memory (int ind, ...) {
   loops = timespec_to_usec(t_spec); // this contains the amount of mathematical operations to be done
 
 
-/*-----Alt 1-----*/
-  // accumulator = malloc(sizeof(double)); //Only allocates space for one double.
-  // for (i = 0; i < loops; i++) {         //Have my doubts here since our second 
-  //   *accumulator += 0.5;                //variable is supposed to be amount of memory.
-  //   *accumulator -= floor(*accumulator);
-  // }
-/*-----Alt 2-----*/
+/*-----Memory Usage Phase----*/
   accumulator = malloc(memory_used*sizeof(double));
   for (i = 0; i < loops; i++) {
     accumulator[i%loops] += 0.5;                    //Doesn't really accomplish anything. Really.
