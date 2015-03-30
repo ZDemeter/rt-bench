@@ -7,7 +7,7 @@
       "phases": {
         "c0": { "loops": 1000 },
         "l0": { "loops": 2000, "res": 0 },
-        "m0": { "loops": 1000, "memory": 100 }
+        "m0": { "loops": 10000, "memory": 100 }
       }
     },
     "thread2": {
@@ -21,7 +21,7 @@
   },
   "global": {
     "default_policy": "SCHED_FIFO",
-    "duration": 10,
+    "duration": 4,
     "logdir": "./",
     "logbasename": "rtbench",
     "lock_pages": true,

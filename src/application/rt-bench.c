@@ -46,8 +46,8 @@ void memory (int ind, ...) {
 /*-----Alt 2-----*/
   accumulator = malloc(memory_used*sizeof(double));
   for (i = 0; i < loops; i++) {
-    accumulator[i] += 0.5;                    //Doesn't really accomplish anything. Really.
-    accumulator[i] -= floor(accumulator[i]);  //I mean even less than previous. But uses 100 memory "slots"...
+    accumulator[i%loops] += 0.5;                    //Doesn't really accomplish anything. Really.
+    accumulator[i%loops] -= floor(accumulator[i%loops]);  //I mean even less than previous. But uses 100 memory "slots"...
   }
 /*---------------*/
   free(accumulator);
