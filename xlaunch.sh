@@ -11,9 +11,11 @@ REMOTE_username=$3
 #----------------------
 
 #-------------------------------------------------
-Num_args=$#
-if [ $((Num_args%2)) = 0 ]; then
-    echo "[LAUNCH] parameters needed: > $Num_args"
+num_args=$#
+num_tests=$((((num_args - 3)) / 2 ))
+num_count=0
+if [ "$((num_args % 2))" = 0 ] || [ "$num_args" -le "5" ]; then
+    echo "[LAUNCH] parameters needed: (tried $num_args)"
     echo "         #1: remote ip"
     echo "         #2: remote port"
     echo "         #3: remote username"
@@ -24,12 +26,16 @@ if [ $((Num_args%2)) = 0 ]; then
     exit
 fi
 #-------------------------------------------------
-
-echo "Starting test sequence"
-
 shift;shift;shift
+echo "Starting test sequence..."
+echo "Number of tests to be executed: $num_tests"
+
 while [ "$1" != "" ]; do
+    echo "Initializing next test..."
+    echo "$(($#/2)) tests left to run"
+    read -t 2
+    #clear
     ./launch.sh $REMOTE_ip $REMOTE_port $REMOTE_username $1 $2
-    echo "Json: $1 , Exp: $2"
     shift;shift
+    num_count=$((num_count+1))
 done

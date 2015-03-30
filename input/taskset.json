@@ -21,7 +21,7 @@
   },
   "global": {
     "default_policy": "SCHED_FIFO",
-    "duration": 4,
+    "duration": 2,
     "logdir": "./",
     "logbasename": "rtbench",
     "lock_pages": true,
