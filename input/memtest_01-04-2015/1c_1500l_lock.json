@@ -3,15 +3,22 @@
   "tasks": {
     "thread1": {
       "priority": 10,
+      "cpus": [1],
+      "phases": {
+        "l0": { "loops": 15000, "res": 2 }
+      }
+    },
+    "thread2": {
+      "priority": 10,
       "cpus": [0,1],
       "phases": {
-        "l0": { "loops": 20000, "res": 0 }
+        "l0": { "loops": 15000, "res": 2 }
       }
     }
   },
   "global": {
     "default_policy": "SCHED_FIFO",
-    "duration": 30,
+    "duration": 2,
     "logdir": "./",
     "logbasename": "rtbench",
     "lock_pages": true,

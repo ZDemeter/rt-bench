@@ -1,0 +1,14 @@
+Starting test sequence...
+Number of tests to be executed: 6
+Initializing test 1_500_400 at 16:30:15
+Finished at 16:30:35
+Initializing test 1_500_1000 at 16:30:35
+Finished at 16:30:54
+Initializing test 1_500_lock at 16:30:54
+Finished at 16:31:12
+Initializing test 1_1500_400 at 16:31:12
+Finished at 16:31:25
+Initializing test 1_1500_1000 at 16:31:25
+Finished at 16:31:39
+Initializing test 1_1500_lock at 16:31:39
+Finished at 16:31:53

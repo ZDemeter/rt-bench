@@ -3,7 +3,7 @@
   "tasks": {
     "thread1": {
       "priority": 10,
-      "cpus": [0,1],
+      "cpus": [1],
       "phases": {
         "m0": { "loops": 1000, "memory": 100 }
       }
@@ -11,7 +11,7 @@
   },
   "global": {
     "default_policy": "SCHED_RR",
-    "duration": 10,
+    "duration": 2,
     "logdir": "./",
     "logbasename": "rtbench",
     "lock_pages": true,

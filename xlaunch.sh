@@ -8,13 +8,19 @@
 REMOTE_ip=$1
 REMOTE_port=$2
 REMOTE_username=$3
+SCHED_NAME="Scheduled"
+SCHED_OUTPUT=$4
+SCHED_OUTPUT=${SCHED_OUTPUT%/*}
+
+echo "Atm PATH ..................... $SCHED_OUTPUT"
 #----------------------
 
 #-------------------------------------------------
 num_args=$#
 num_tests=$((((num_args - 3)) / 2 ))
 num_count=0
-if [ "$((num_args % 2))" = 0 ] || [ "$num_args" -le "5" ]; then
+if [ "$((num_args % 2))" = "0" ] || [ "$num_args" -lt "5" ]; then
+    echo "Variables: amount, $num_args , division, $((num_args % 2)) , tests , $num_tests"
     echo "[LAUNCH] parameters needed: (tried $num_args)"
     echo "         #1: remote ip"
     echo "         #2: remote port"
@@ -26,16 +32,20 @@ if [ "$((num_args % 2))" = 0 ] || [ "$num_args" -le "5" ]; then
     exit
 fi
 #-------------------------------------------------
-shift;shift;shift
-echo "Starting test sequence..."
-echo "Number of tests to be executed: $num_tests"
+shift;shift;shift #Shift away the three first arguments, already saved for use. Easier to loop the remaining.
+echo "" > input/memtest_31-3-2015/$SCHED_NAME.txt
+echo "Starting test sequence..." | tee -a $SCHED_OUTPUT/$SCHED_NAME.txt
+echo "Number of tests to be executed: $num_tests" | tee -a $SCHED_OUTPUT/$SCHED_NAME.txt
 
 while [ "$1" != "" ]; do
-    echo "Initializing next test..."
+    echo -n "Initializing test $2 at " | tee -a $SCHED_OUTPUT/$SCHED_NAME.txt
+    date +"%T" | tee -a $SCHED_OUTPUT/$SCHED_NAME.txt
     echo "$(($#/2)) tests left to run"
-    read -t 2
+    sleep 1
     #clear
     ./launch.sh $REMOTE_ip $REMOTE_port $REMOTE_username $1 $2
     shift;shift
     num_count=$((num_count+1))
+    echo -n "Finished at " | tee -a $SCHED_OUTPUT/$SCHED_NAME.txt
+    date +"%T" | tee -a $SCHED_OUTPUT/$SCHED_NAME.txt
 done
