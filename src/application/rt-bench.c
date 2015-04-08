@@ -24,28 +24,6 @@ static inline busywait(struct timespec *to) {
   }
 }
 
-void memory (int ind, ...) {
-  int memory_used, loops, i;
-  double *accumulator;
-  struct timespec *t_spec;
-  va_list argp;
-  va_start(argp, ind);
-  t_spec = va_arg(argp, struct timespec*);
-  memory_used = va_arg(argp, int); // this contains the amount of memory to be allocated
-  va_end(argp); 
-  loops = timespec_to_usec(t_spec); // this contains the amount of mathematical operations to be done
-
-
-/*-----Memory Usage Phase----*/
-  accumulator = malloc(memory_used*sizeof(double));
-  for (i = 0; i < loops; i++) {
-    accumulator[i%memory_used] += 0.5;                    //Doesn't really accomplish anything. Really.
-    accumulator[i%memory_used] -= floor(accumulator[i%memory_used]);  //I mean even less than previous. But uses 100 memory "slots"...
-  }
-/*---------------*/
-  free(accumulator);
-
-}
 
 void sleep_for (int ind, ...) {
   struct timespec *t_sleep, t_now;
@@ -110,6 +88,31 @@ void lock(int ind, ...) {
   //busywait(&t_exec);
   pthread_mutex_unlock(&opts.resources[resource_id].mtx);
 }
+
+void memory (int ind, ...) {
+  int memory_used, loops, i;
+  double *accumulator;
+  struct timespec *t_spec;
+  va_list argp;
+  va_start(argp, ind);
+  t_spec = va_arg(argp, struct timespec*);
+  memory_used = va_arg(argp, int); // contains amount of memory to be allocated
+  va_end(argp); 
+  loops = timespec_to_usec(t_spec); // contains amount of mathematical operations to be done
+
+
+/*-----Memory Usage Phase----*/
+  accumulator = (double*)malloc(memory_used*sizeof(double));
+  for (i = 0; i < memory_used; i++)
+    accumulator[i] = 0.25;
+  for (i = 0; i < loops; i++) {
+    accumulator[i%memory_used] += 0.5;                    //Doesn't really accomplish anything. Really.
+    accumulator[i%memory_used] -= floor(accumulator[i%memory_used]);  //I mean even less than previous. But uses 100 memory "slots"...
+  }
+/*---------------*/
+  free(accumulator);
+}
+
 
 static void shutdown(int sig) {
   int i;
