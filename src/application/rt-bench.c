@@ -103,8 +103,6 @@ void memory (int ind, ...) {
 
 /*-----Memory Usage Phase----*/
   accumulator = (double*)malloc(memory_used*sizeof(double));
-  for (i = 0; i < memory_used; i++)
-    accumulator[i] = 0.25;
   for (i = 0; i < loops; i++) {
     accumulator[i%memory_used] += 0.5;                    //Doesn't really accomplish anything. Really.
     accumulator[i%memory_used] -= floor(accumulator[i%memory_used]);  //I mean even less than previous. But uses 100 memory "slots"...
