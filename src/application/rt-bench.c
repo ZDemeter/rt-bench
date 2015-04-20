@@ -83,7 +83,7 @@ void lock(int ind, ...) {
     accumulator += 0.5;
     accumulator -= floor(accumulator);
   }
-    //    counter = (++counter) * i;
+  //counter = (++counter) * i;
   //t_exec = timespec_add(&now, t_spec);
   //busywait(&t_exec);
   pthread_mutex_unlock(&opts.resources[resource_id].mtx);
@@ -97,12 +97,10 @@ void memory (int ind, ...) {
   va_list argp;
   va_start(argp, ind);
   t_spec = va_arg(argp, struct timespec*);
-  memory_used = va_arg(argp, int); //amount of memory to be allocated
+  memory_used = va_arg(argp, int);
   va_end(argp); 
-  loops = timespec_to_usec(t_spec); //amount of mathematical operations to be done
+  loops = timespec_to_usec(t_spec);
 
-
-/*-----Memory Usage Phase----*/
   printf("Starting calculations...\n");
   accumulator = (double*)malloc(memory_used*sizeof(double));
   for (i = 0; i < loops; i++) {
