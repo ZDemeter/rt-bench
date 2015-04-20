@@ -90,6 +90,7 @@ void lock(int ind, ...) {
 }
 
 void memory (int ind, ...) {
+  printf("Entered memory function\n");
   int memory_used, loops, i;
   double *accumulator;
   struct timespec *t_spec;
@@ -102,6 +103,7 @@ void memory (int ind, ...) {
 
 
 /*-----Memory Usage Phase----*/
+  printf("Starting calculations...\n");
   accumulator = (double*)malloc(memory_used*sizeof(double));
   for (i = 0; i < loops; i++) {
     accumulator[i%memory_used] += 0.5;                    //Doesn't really accomplish anything. Really.
@@ -109,6 +111,7 @@ void memory (int ind, ...) {
   }
 /*---------------*/
   free(accumulator);
+  printf("Exiting Memory Function.");
 }
 
 
