@@ -88,7 +88,7 @@ void lock(int ind, ...) {
   //busywait(&t_exec);
   pthread_mutex_unlock(&opts.resources[resource_id].mtx);
 }
-
+/*
 void memory (int ind, ...) {
   printf("Entered memory function\n");
   int memory_used, loops, i;
@@ -113,7 +113,7 @@ void memory (int ind, ...) {
   free(accumulator);
   printf("Exiting Memory Function.");
 }
-
+*/
 
 static void shutdown(int sig) {
   int i;
