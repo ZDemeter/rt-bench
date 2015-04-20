@@ -108,6 +108,7 @@ void memory (int ind, ...) {
   for (i = 0; i < loops; i++) {
     accumulator[i%memory_used] += 0.5;
     accumulator[i%memory_used] -= floor(accumulator[i%memory_used]);
+  }
   free(accumulator);
   printf("Exiting Memory Function.");
 }
