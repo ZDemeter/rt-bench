@@ -115,18 +115,12 @@ ssh -p ${REMOTE_port} ${REMOTE_username}@${REMOTE_ip} \
   "rm -f rt-bench/*.log"
 printf " done\n"
 
-printf "[ERROR PASS] Setting ANALYSIS_DIR\n"
 ANALYSIS_DIR="../../analysis/" 
-printf "[ERROR PASS] B4 cd res_dir/ref_tra\n"
 cd ${RESULT_dir}/${REFERENCE_trace}
-printf "[ERROR PASS] About to cp\n"
 cp ${ANALYSIS_DIR}/analysis.m .
 cp ${ANALYSIS_DIR}/plotSupply.m .
-printf "[ERROR PASS] About to set GENERATED_OCTAVE_SCRIPT ..."
 GENERATED_OCTAVE_SCRIPT="${REFERENCE_trace}.m"
-printf "done setting script\n"
 
-printf "[ERROR PASS] About to edit octave files"
 echo "% ----------------------------------------" > $GENERATED_OCTAVE_SCRIPT
 echo "clear;" >> $GENERATED_OCTAVE_SCRIPT
 echo "experiment_name     = '$REFERENCE_trace';" >> $GENERATED_OCTAVE_SCRIPT
