@@ -386,12 +386,14 @@ int main(int argc, char* argv[]) {
   /* Take the beginning time for everything */
   clock_gettime(CLOCK_MONOTONIC, &t_start);
 
+  printf("[ERROR PASSED]About to start threds...\n");
   /* start threads */
   for (i = 0; i < nthreads; i++) {
     tdata = &opts.threads_data[i];
     tdata->duration = opts.duration;
     tdata->main_app_start = t_start;
     tdata->lock_pages = opts.lock_pages;
+      printf("[ERROR PASSED]In loop %d...\n", i);
     if (opts.logdir) {
       snprintf(tmp, PATH_LENGTH, "%s/%s-%s.log",
          opts.logdir,
