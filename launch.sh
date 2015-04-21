@@ -128,7 +128,7 @@ echo "% ----------------------------------------" >> $GENERATED_OCTAVE_SCRIPT
 echo "addpath('$ANALYSIS_DIR');" >> $GENERATED_OCTAVE_SCRIPT
 echo "addpath('${ANALYSIS_DIR}jsonlab/');" >> $GENERATED_OCTAVE_SCRIPT
 echo "process(experiment_name);" >> $GENERATED_OCTAVE_SCRIPT
-echo "disp ("can I print here?");" >> $GENERATED_OCTAVE_SCRIPT
+echo "disp("allow me to print plz")" >> $GENERATED_OCTAVE_SCRIPT
 echo "analysis;" >> $GENERATED_OCTAVE_SCRIPT
 
 printf "[ERROR PASS] ?--no-window-system?\n"
