@@ -344,6 +344,7 @@ void *thread_body(void *arg) {
 
 int main(int argc, char* argv[]) {
 
+  printf("[ERROR PASSED]Start of main, must work...\n");
   int i;
   struct timespec t_start;
   thread_data_t *tdata;
