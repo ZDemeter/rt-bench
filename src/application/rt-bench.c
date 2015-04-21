@@ -361,6 +361,7 @@ int main(int argc, char* argv[]) {
   signal(SIGINT, shutdown);
 
   /* if using ftrace open trace and marker fds */
+  printf("[ERROR PASSED]Main function 1...\n");
   if (opts.ftrace) {
     log_notice("configuring ftrace");
     strcpy(tmp, ft_data.debugfs);
