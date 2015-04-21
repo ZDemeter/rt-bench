@@ -58,7 +58,9 @@ function process(experiment_name)
   
   %% Importing data from 'experiment_name.csv'
   input_file = strcat(experiment_name,'.csv');
+  printf("[ERROR PASS] This is where it should crash");
   full_data = csvread(input_file);
+  printf("[ERROR PASS] This should not be showing");
   thread_run = unique(full_data(:,2));
   thread_not_run = setdiff((1:thread_num)',thread_run);
   if (~isempty(thread_not_run))

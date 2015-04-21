@@ -131,7 +131,7 @@ echo "disp (\"[OCTAVE SCRIPT] This shows that the octave file exists.\")" >> $GE
 echo "process(experiment_name);" >> $GENERATED_OCTAVE_SCRIPT
 echo "analysis;" >> $GENERATED_OCTAVE_SCRIPT
 
-printf "[ERROR PASS] ?--no-window-system?\n"
+printf "[ERROR PASS] About to run generated script..."
 octave -q --no-window-system $GENERATED_OCTAVE_SCRIPT
 # Removing the generated script file, as running it again may only
 #   erase data
