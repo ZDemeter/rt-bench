@@ -122,9 +122,11 @@ cd ${RESULT_dir}/${REFERENCE_trace}
 printf "[ERROR PASS] About to cp\n"
 cp ${ANALYSIS_DIR}/analysis.m .
 cp ${ANALYSIS_DIR}/plotSupply.m .
-printf "[ERROR PASS] About to set GENERATED_OCTAVE_SCRIPT\n"
+printf "[ERROR PASS] About to set GENERATED_OCTAVE_SCRIPT ..."
 GENERATED_OCTAVE_SCRIPT="${REFERENCE_trace}.m"
+printf "done setting script\n"
 
+printf "[ERROR PASS] About to edit octave files"
 echo "% ----------------------------------------" > $GENERATED_OCTAVE_SCRIPT
 echo "clear;" >> $GENERATED_OCTAVE_SCRIPT
 echo "experiment_name     = '$REFERENCE_trace';" >> $GENERATED_OCTAVE_SCRIPT
@@ -134,9 +136,11 @@ echo "addpath('${ANALYSIS_DIR}jsonlab/');" >> $GENERATED_OCTAVE_SCRIPT
 echo "process(experiment_name);" >> $GENERATED_OCTAVE_SCRIPT
 echo "analysis;" >> $GENERATED_OCTAVE_SCRIPT
 
+printf "[ERROR PASS] ?--no-window-system?\n"
 octave -q --no-window-system $GENERATED_OCTAVE_SCRIPT
 # Removing the generated script file, as running it again may only
 #   erase data
+printf "[ERROR PASS] Removing octave script\n"
 rm $GENERATED_OCTAVE_SCRIPT
 
 printf "[LAUNCH] Default analysis completed!\n"
