@@ -38,7 +38,9 @@ void sleep_for (int ind, ...) {
 #endif
   clock_nanosleep(CLOCK_MONOTONIC, TIMER_ABSTIME, &t_now, NULL);
 }
-
+--------------------------" > $GENERATED_OCTAVE_SCRIPT
+echo "clear;" >> $GENERATED_OCTAVE_SCRIPT
+echo "experiment_name    
 void compute (int ind, ...) {
   //  unsigned int loops, i, counter = 0;
   unsigned int loops, i;
@@ -344,7 +346,6 @@ void *thread_body(void *arg) {
 
 int main(int argc, char* argv[]) {
 
-  printf("[ERROR PASSED]Start of main, must work...\n");
   int i;
   struct timespec t_start;
   thread_data_t *tdata;
@@ -362,7 +363,6 @@ int main(int argc, char* argv[]) {
   signal(SIGINT, shutdown);
 
   /* if using ftrace open trace and marker fds */
-  printf("[ERROR PASSED]Main function 1...\n");
   if (opts.ftrace) {
     log_notice("configuring ftrace");
     strcpy(tmp, ft_data.debugfs);
@@ -388,14 +388,12 @@ int main(int argc, char* argv[]) {
   /* Take the beginning time for everything */
   clock_gettime(CLOCK_MONOTONIC, &t_start);
 
-  printf("[ERROR PASSED]About to start threds...\n");
   /* start threads */
   for (i = 0; i < nthreads; i++) {
     tdata = &opts.threads_data[i];
     tdata->duration = opts.duration;
     tdata->main_app_start = t_start;
     tdata->lock_pages = opts.lock_pages;
-      printf("[ERROR PASSED]In loop %d...\n", i);
     if (opts.logdir) {
       snprintf(tmp, PATH_LENGTH, "%s/%s-%s.log",
          opts.logdir,
