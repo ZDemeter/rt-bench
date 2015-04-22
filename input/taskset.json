@@ -1,13 +1,13 @@
 {
-  "resources": 3,
+  "resources": 2,
   "tasks": {
     "thread1": {
       "priority": 10,
-      "cpus": [1],
+      "cpus": [0,1,2],
       "phases": {
         "c0": { "loops": 1000 },
         "l0": { "loops": 2000, "res": 0 },
-        "m0": { "loops": 10000, "memory": 100 }
+        "m0": { "loops": 1000, "memory": 10 }
       }
     },
     "thread2": {
@@ -15,12 +15,12 @@
       "cpus": [0,1],
       "phases": {
         "c0": { "loops": 5000 },
-        "l0": { "loops": 10000, "res": 2 }
+        "l0": { "loops": 10000, "res": 1 }
       }
     }
   },
   "global": {
-    "default_policy": "SCHED_FIFO",
+    "default_policy": "SCHED_RR",
     "duration": 2,
     "logdir": "./",
     "logbasename": "rtbench",

@@ -150,6 +150,7 @@ static void parse_thread_phases(struct json_object *task_phases, thread_data_t *
     data->phases[idx].index = idx;
     string_to_phase(key, &ph);
     data->phases[idx].phase_type = ph;
+    printf("[PEEKABOOO] SEARCHING")
 
     switch (ph) {
     case LOCK:
