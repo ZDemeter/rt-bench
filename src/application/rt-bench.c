@@ -351,6 +351,7 @@ int main(int argc, char* argv[]) {
   thread_data_t *tdata;
   char tmp[PATH_LENGTH];
 
+  printf("[OUTOUT] I CAN'T TRACK THIS DOWN*:**:*:*:*:*:*:*:*:*\n");
   parse_command_line(argc, argv, &opts);
   nthreads = opts.nthreads;
   threads = malloc(nthreads * sizeof(pthread_t));
