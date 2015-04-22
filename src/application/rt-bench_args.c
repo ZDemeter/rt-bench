@@ -129,6 +129,7 @@ static void parse_resources(struct json_object *resources, rtbench_options_t *op
 
 static void parse_thread_phases(struct json_object *task_phases, thread_data_t *data,
   const rtbench_options_t *opts) {
+  printf("[FIND ME] *_*_*_*_*_*_*_*PARSE THREAD OUTPUT!*_*_*_*_*_*_*\n");
 
   /* used in the foreach macro */
   struct lh_entry *entry; char *key; struct json_object *val; int idx;
@@ -150,7 +151,6 @@ static void parse_thread_phases(struct json_object *task_phases, thread_data_t *
     data->phases[idx].index = idx;
     string_to_phase(key, &ph);
     data->phases[idx].phase_type = ph;
-    printf("[PEEKABOOO] SEARCHING")
 
     switch (ph) {
     case LOCK:
