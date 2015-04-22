@@ -127,15 +127,12 @@ echo "experiment_name='$REFERENCE_trace';" >> $GENERATED_OCTAVE_SCRIPT
 echo "% ----------------------------------------" >> $GENERATED_OCTAVE_SCRIPT
 echo "addpath('$ANALYSIS_DIR');" >> $GENERATED_OCTAVE_SCRIPT
 echo "addpath('${ANALYSIS_DIR}jsonlab/');" >> $GENERATED_OCTAVE_SCRIPT
-echo "disp (\"[OCTAVE SCRIPT] This shows that the octave file exists.\")" >> $GENERATED_OCTAVE_SCRIPT
 echo "process(experiment_name);" >> $GENERATED_OCTAVE_SCRIPT
 echo "analysis;" >> $GENERATED_OCTAVE_SCRIPT
 
-printf "[ERROR PASS] About to run generated script..."
 octave -q --no-window-system $GENERATED_OCTAVE_SCRIPT
 # Removing the generated script file, as running it again may only
 #   erase data
-printf "[ERROR PASS] Removing octave script\n"
 rm $GENERATED_OCTAVE_SCRIPT
 
 printf "[LAUNCH] Default analysis completed!\n"
