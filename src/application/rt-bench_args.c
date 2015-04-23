@@ -200,8 +200,6 @@ static void parse_thread_phases(struct json_object *task_phases, thread_data_t *
 static void parse_thread_data(char *name, struct json_object *obj,
   int idx, thread_data_t *data, const rtbench_options_t *opts) {
 
-  log_info(PFX "[SHOW ME SOMETHING]*_*_*_*_*_*_*_*_*_*_**_*_*_*_*_*_*_*");
-
   long exec, period, dline;
   char *policy;
   char def_policy[RTBENCH_POLICY_DESCR_LENGTH];
@@ -358,7 +356,7 @@ void parse_config(const char *filename, rtbench_options_t *opts) {
   printf("[DEBUG] Entering parse_config\n");
   js = json_object_from_file(fn);
   get_opts_from_json_object(js, opts);
-  printf("[DEBUG] Exiting parse_config");
+  printf("[DEBUG] Exiting parse_config\n");
   return;
 }
 
