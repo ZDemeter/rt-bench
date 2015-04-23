@@ -149,7 +149,8 @@ static void parse_thread_phases(struct json_object *task_phases, thread_data_t *
     data->nphases++;
   }
   data->phases = malloc(sizeof(rtbench_tasks_phase_list_t) * data->nphases);
-
+  
+  printf("[DEBUG] Staring foreach function"\n);
   foreach (task_phases, entry, key, val, idx) {
     data->phases[idx].index = idx;
     string_to_phase(key, &ph);
@@ -157,21 +158,26 @@ static void parse_thread_phases(struct json_object *task_phases, thread_data_t *
 
     switch (ph) {
     case LOCK:
+      printf("[DEBUG] ph switch case LOCK\n");
       data->phases[idx].do_phase = lock;
       break;
     case SLEEP:
+      printf("[DEBUG] ph switch case SLEEP\n");
       data->phases[idx].do_phase = sleep_for;
       break;
     case COMPUTE:
+      printf("[DEBUG] ph switch case COMPUTE\n");
       data->phases[idx].do_phase = compute;
       break;
     case MEMORY:
+      printf("[DEBUG] ph switch case MEMORY\n");
       data->phases[idx].do_phase = memory;
       break;
     }
 
     phase = get_in_object(task_phases, key, FALSE);
     //set loops/duration
+    printf("[DEBUG] Setting loop duration\n");
     if (ph == SLEEP) {
       duration = get_in_object(phase, "duration", FALSE);
       data->phases[idx].usage = usec_to_timespec(get_int_value_from(phase, "duration", FALSE, 0));
@@ -182,6 +188,7 @@ static void parse_thread_phases(struct json_object *task_phases, thread_data_t *
     }
 
     // Set resource id or memory 
+    printf("[DEBUG] Setting resource id or memory\n");
     if (ph == LOCK) { /* if lock, find resource id */
       resource_id = get_in_object(phase, "res", FALSE);
       data->phases[idx].resource_id = get_int_value_from(phase, "res", FALSE, 0);
