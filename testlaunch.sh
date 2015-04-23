@@ -11,15 +11,16 @@ REMOTE_username=$3
 SCHED_NAME="Scheduled"
 SCHED_OUTPUT=$4
 SCHED_SRC=${SCHED_OUTPUT%/*}
+SCHED_TESTNAME=$5
 
 echo "Atm PATH ..................... $SCHED_OUTPUT"
 #----------------------
 
 #-------------------------------------------------
 num_args=$#
-num_tests=$(wc -l )
+num_tests=$(wc -l < $SCHED_OUTPUT)
 num_count=0
-if [ "$((num_args % 2))" = "0" ] || [ "$num_args" -lt "5" ]; then
+if [ "$num_args" -lt "5" ]; then
     echo "Variables: amount, $num_args , division, $((num_args % 2)) , tests , $num_tests"
     echo "[LAUNCH] parameters needed: (tried $num_args)"
     echo "         #1: remote ip"
@@ -32,7 +33,7 @@ if [ "$((num_args % 2))" = "0" ] || [ "$num_args" -lt "5" ]; then
     exit
 fi
 #-------------------------------------------------
-echo "" > input/memtest_31-3-2015/$SCHED_NAME.txt
+echo "" > input/$SCHED_TESTNAME/$SCHED_NAME.txt
 echo "Starting test sequence..." | tee -a $SCHED_SRC/$SCHED_NAME.txt
 echo "Number of tests to be executed: $num_tests" | tee -a $SCHED_OUTPUT/$SCHED_NAME.txt
 
