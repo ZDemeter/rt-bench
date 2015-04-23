@@ -198,7 +198,6 @@ static void parse_thread_phases(struct json_object *task_phases, thread_data_t *
       data->phases[idx].resource_id = get_int_value_from(phase, "memory", FALSE, 0);
     }
     else{
-      printf("[DEBUG] About to set resource_id\n");
       data->phases[idx].resource_id = -1; /* Set to -1 if not lock or memory phase */
     }
   }
@@ -379,7 +378,8 @@ void parse_command_line(int argc, char **argv, rtbench_options_t *opts) {
     parse_config(argv[1], opts);
     return;
   }
-  else 
+  else {
     exit(EXIT_FAILURE);
+  }
   printf("[DEBUG] Exiting parse_command_line\n"); 
 }
