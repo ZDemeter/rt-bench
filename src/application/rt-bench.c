@@ -38,9 +38,7 @@ void sleep_for (int ind, ...) {
 #endif
   clock_nanosleep(CLOCK_MONOTONIC, TIMER_ABSTIME, &t_now, NULL);
 }
---------------------------" > $GENERATED_OCTAVE_SCRIPT
-echo "clear;" >> $GENERATED_OCTAVE_SCRIPT
-echo "experiment_name    
+
 void compute (int ind, ...) {
   //  unsigned int loops, i, counter = 0;
   unsigned int loops, i;
@@ -92,7 +90,6 @@ void lock(int ind, ...) {
 }
 
 void memory (int ind, ...) {
-  printf("Entered memory function\n");
   int memory_used, loops, i;
   double *accumulator;
   struct timespec *t_spec;
@@ -103,14 +100,12 @@ void memory (int ind, ...) {
   va_end(argp); 
   loops = timespec_to_usec(t_spec);
 
-  printf("Starting calculations...\n");
   accumulator = (double*)malloc(memory_used*sizeof(double));
   for (i = 0; i < loops; i++) {
     accumulator[i%memory_used] += 0.5;
     accumulator[i%memory_used] -= floor(accumulator[i%memory_used]);
   }
   free(accumulator);
-  printf("Exiting Memory Function.");
 }
 
 static void shutdown(int sig) {
@@ -351,7 +346,6 @@ int main(int argc, char* argv[]) {
   thread_data_t *tdata;
   char tmp[PATH_LENGTH];
 
-  printf("[OUTOUT] I CAN'T TRACK THIS DOWN*:**:*:*:*:*:*:*:*:*\n");
   parse_command_line(argc, argv, &opts);
   nthreads = opts.nthreads;
   threads = malloc(nthreads * sizeof(pthread_t));
