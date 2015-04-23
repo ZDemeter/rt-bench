@@ -193,13 +193,12 @@ static void parse_thread_phases(struct json_object *task_phases, thread_data_t *
       resource_id = get_in_object(phase, "res", FALSE);
       data->phases[idx].resource_id = get_int_value_from(phase, "res", FALSE, 0);
     }
-    else if(ph = MEMORY) {
+    else if(ph == MEMORY) {
       resource_id = get_in_object(phase, "memory", FALSE);
       data->phases[idx].resource_id = get_int_value_from(phase, "memory", FALSE, 0);
     }
-    else{
+    else
       data->phases[idx].resource_id = -1; /* Set to -1 if not lock or memory phase */
-    }
   }
   printf("[DEBUG] Exiting parse_thread_phases\n");
 
