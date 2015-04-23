@@ -119,12 +119,14 @@ static inline int get_int_value_from(struct json_object *where,
 static void parse_resources(struct json_object *resources, rtbench_options_t *opts) {
   int i;
   int res = json_object_get_int(resources);
+  printf("[DEBUG] Entering parse_resources\n");
   opts->resources = malloc(sizeof(rtbench_resource_t) * res);
   for (i = 0; i < res; i++) {
     pthread_mutexattr_init(&opts->resources[i].mtx_attr);
     pthread_mutex_init(&opts->resources[i].mtx, &opts->resources[i].mtx_attr);
   }
   opts->nresources = res;
+  printf("[DEBUG] Exiting parse_resources\n");
 }
 
 static void parse_thread_phases(struct json_object *task_phases, thread_data_t *data,
@@ -139,6 +141,8 @@ static void parse_thread_phases(struct json_object *task_phases, thread_data_t *
 
   rtbench_tasks_phase_list_t *tmp, *head, *last;
   char debug_msg[512], tmpmsg[512];
+  printf("[DEBUG] Entering parse_thread_phases\n");
+
 
   data->nphases = 0;
   foreach (task_phases, entry, key, val, idx) {
@@ -189,6 +193,8 @@ static void parse_thread_phases(struct json_object *task_phases, thread_data_t *
     else
       data->phases[idx].resource_id = -1; /* Set to -1 if not lock or memory phase */
   }
+  printf("[DEBUG] Exiting parse_thread_phases\n");
+
 }
 
 static void parse_thread_data(char *name, struct json_object *obj,
@@ -202,6 +208,8 @@ static void parse_thread_data(char *name, struct json_object *obj,
   struct array_list *cpuset;
   struct json_object *cpuset_obj, *cpu, *phases;
   int i, cpu_idx;
+  printf("[DEBUG] Entering parse_thread_data\n");
+
 
   data->ind = idx;
   data->name = strdup(name);
@@ -286,11 +294,15 @@ static void parse_thread_data(char *name, struct json_object *obj,
     assure_type_is(phases, obj, "phases", json_type_object);
     parse_thread_phases(phases, data, opts);
   }
+  printf("[DEBUG] Exiting parse_thread_data\n");
+
 }
 
 static void parse_tasks(struct json_object *tasks, rtbench_options_t *opts) {
   /* used in the foreach macro */
   struct lh_entry *entry; char *key; struct json_object *val; int idx;
+  printf("[DEBUG] Entering parse_tasks\n");
+
 
   opts->nthreads = 0;
   foreach(tasks, entry, key, val, idx) { opts->nthreads++; }
@@ -299,10 +311,13 @@ static void parse_tasks(struct json_object *tasks, rtbench_options_t *opts) {
   foreach (tasks, entry, key, val, idx) {
     parse_thread_data(key, val, idx, &opts->threads_data[idx], opts);
   }
+  printf("[DEBUG] Exiting parse_tasks\n");
+
 }
 
 static void parse_global(struct json_object *global, rtbench_options_t *opts) {
   char *policy;
+  printf("[DEBUG] Entering parse_global\n");
   opts->duration = get_int_value_from(global, "duration", TRUE, 1);
   policy = get_string_value_from(global, "default_policy", TRUE, "SCHED_OTHER");
   if (string_to_policy(policy, &opts->policy) != 0) {
@@ -313,10 +328,12 @@ static void parse_global(struct json_object *global, rtbench_options_t *opts) {
   opts->logbasename = get_string_value_from(global, "logbasename", TRUE, "rt-bench.log");
   opts->lock_pages = get_bool_value_from(global, "lock_pages", TRUE, 1);
   opts->ftrace = get_bool_value_from(global, "ftrace", TRUE, 1);
+  printf("[DEBUG] Exiting parse_global\n");
 }
 
 static void get_opts_from_json_object(struct json_object *root, rtbench_options_t *opts) {
   struct json_object *global, *tasks, *resources;
+  printf("[DEBUG] Entering get_obj_from_json_object\n");
 
   if (is_error(root)) {
     log_error(PFX "Error while parsing input JSON: %s",
@@ -331,18 +348,22 @@ static void get_opts_from_json_object(struct json_object *root, rtbench_options_
   parse_global(global, opts);
   parse_tasks(tasks, opts); 
   parse_resources(resources, opts);
+  printf("[DEBUG] Exiting get_obj_from_json_object\n");
 }
 
 void parse_config(const char *filename, rtbench_options_t *opts) {
   int done;
   char *fn = strdup(filename);
   struct json_object *js;
+  printf("[DEBUG] Entering parse_config\n");
   js = json_object_from_file(fn);
   get_opts_from_json_object(js, opts);
+  printf("[DEBUG] Exiting parse_config");
   return;
 }
 
 void parse_command_line(int argc, char **argv, rtbench_options_t *opts) {
+  printf("[DEBUG] Entered parse_command_line\n"); 
   if (argc < 2)
     usage(NULL, EXIT_SUCCESS);
 
@@ -353,4 +374,5 @@ void parse_command_line(int argc, char **argv, rtbench_options_t *opts) {
   }
   else 
     exit(EXIT_FAILURE);
+  printf("[DEBUG] Exiting parse_command_line\n"); 
 }
