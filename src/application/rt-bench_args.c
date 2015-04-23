@@ -150,7 +150,7 @@ static void parse_thread_phases(struct json_object *task_phases, thread_data_t *
   }
   data->phases = malloc(sizeof(rtbench_tasks_phase_list_t) * data->nphases);
   
-  printf("[DEBUG] Staring foreach function"\n);
+  printf("[DEBUG] Staring foreach function\n");
   foreach (task_phases, entry, key, val, idx) {
     data->phases[idx].index = idx;
     string_to_phase(key, &ph);
