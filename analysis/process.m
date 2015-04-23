@@ -58,7 +58,6 @@ function process(experiment_name)
   
   %% Importing data from 'experiment_name.csv'
   input_file = strcat(experiment_name,'.csv');
-  printf("Content of input_file: %s", input_file);
   full_data = csvread(input_file);
   thread_run = unique(full_data(:,2));
   thread_not_run = setdiff((1:thread_num)',thread_run);
