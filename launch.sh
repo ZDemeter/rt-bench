@@ -88,7 +88,7 @@ echo "[LAUNCH] Connecting to remote machine and executing ..."
   # -e 'sched_migrate*' # monitor migrations
   # -e 'sched_wakeup*' # monitor scheduling wakeups
   # -e sched_switch # monitoring switch 
-ssh -t -p ${REMOTE_port} ${REMOTE_username}@${REMOTE_ip} \
+ssh -t -t -p ${REMOTE_port} ${REMOTE_username}@${REMOTE_ip} \
   "cd rt-bench && \
   sudo $TRACE_CMD_COMMAND record -N ${LISTENER_IP}:${LISTENING_PORT} \
   -e 'sched_migrate*' \
