@@ -64,7 +64,7 @@ mv results/$SCHED_NAME.txt results/$SCHED_result_folder/
 echo -e "[TLOG]Starting test sequence...\n" | tee -a results/$SCHED_result_folder/$SCHED_NAME.txt
 
 for (( c=1; c<=$num_tests; c++ )) ; do
-    sleep 2
+    sleep 4
     test_file_pos=$((c * 2 - 2))
     test_name_pos=$((c * 2 - 1))
     echo "[TLOG]From [${sched_array[$test_file_pos]}] create [${sched_array[$test_name_pos]}]" |tee -a results/$SCHED_result_folder/$SCHED_NAME.txt
