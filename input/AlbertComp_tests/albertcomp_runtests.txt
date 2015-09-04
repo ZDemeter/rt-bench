@@ -1,0 +1,4 @@
+input/AlbertComp_tests/v100_comp25.json
+v100_comp25
+input/AlbertComp_tests/v100_comp50.json
+v100_comp50

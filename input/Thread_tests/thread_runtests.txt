@@ -1,0 +1,10 @@
+input/Thread_tests/more_loops_1.json
+more_loops_1
+input/Thread_tests/more_loops_2.json
+more_loops_2
+input/Thread_tests/threads_2.json
+threads_2
+input/Thread_tests/threads_3.json
+threads_3
+input/Thread_tests/threads_4.json
+threads_4

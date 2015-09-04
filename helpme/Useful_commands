@@ -1,0 +1,46 @@
+------------------------------------------
+ Copy files over ssh:
+$scp /path/to/file.txt zsolt@130.235.83.197:~/documents/(new_name.txt)
+or reverse:
+$scp zsolt@130.235.83.197:~/path/to/file.txt /target/dir/(new_name.txt)
+------------------------------------------
+ Create new files:
+$touch <file_name>.<format>
+Can loop with curly brackets:
+example:
+$touch hi{1..10}0.json
+------------------------------------------
+ Replace words in textfile:
+$sed -i 's/<old>/<new>/g' <file>
+$sed -i '<row> s/<old>/<new>/g' <file>
+-i indicates the replacement in current file, otherwise if will just print with the change.
+Chose several files by using *.
+example:
+$sed -i 's/mem/lock/g' *.txt
+end-of-line sign: $0
+example:
+$sed -i 's/$/,/g' file.json	(puts a ',' at the end of each line)
+------------------------------------------
+ Create multiple files with same content:
+(Problem: Can't make a single line loop with right side argument.)
+$tee <name{x..y}.frm> < <source.frm>
+$tee <name{x..y}.frm> < <source.frm> >/dev/null
+example
+$tee v10_{5..20..5}test.json < v10_first.json
+------------------------------------------
+Print the line number of lines with matching pattern:
+$awk '/<pattern>/ {print NR,$0}' <file.txt>
+
+Also, remove pattern for all lines
+$awk '{print NR,$0}' <file.txt>
+
+------------------------------------------
+Some specific commands I've used:
+ Printing the input file:
+$for i in {15..40..5}; do for j in {1..5}; do printf "%s\n%s\n" input/TimedBig_tests/v10_${i}sec.json v10_${i}sec_${j} >> timedbig_runtests.txt; done; done
+
+ Adding values to file mirroring filename(patterned)
+$for v in {3000..300000..3000}; do sed -i "15 s/10000/${v}/g" m1000l_${v}.json; done
+
+------------------------------------------
+

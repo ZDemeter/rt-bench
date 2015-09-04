@@ -1,7 +1,0 @@
-[31-3-2015]
-clear; ./xlaunch.sh 130.235.83.53 22 user input/memtest_31-3-2015/1c_500l_400m.json 1_500_400 input/memtest_31-3-2015/1c_500l_1000m.json 1_500_1000 input/memtest_31-3-2015/1c_500l_lock.json 1_500_lock input/memtest_31-3-2015/1c_1500l_400m.json 1_1500_400 input/memtest_31-3-2015/1c_1500l_1000m.json 1_1500_1000 input/memtest_31-3-2015/1c_1500l_lockm.json 1_1500_lock
-[Didn't execute properly? Too long duration]
-
-
-[01-04-2015]
-clear; ./xlaunch.sh 130.235.83.53 22 user input/memtest_01-04-2015/1c_500l_400m.json 1_500_400 input/memtest_01-04-2015/1c_500l_1000m.json 1_500_1000 input/memtest_01-04-2015/1c_500l_lock.json 1_500_lock input/memtest_01-04-2015/1c_1500l_400m.json 1_1500_400 input/memtest_01-04-2015/1c_1500l_1000m.json 1_1500_1000 input/memtest_01-04-2015/1c_1500l_lock.json 1_1500_lock

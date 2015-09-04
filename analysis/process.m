@@ -222,7 +222,7 @@ function process(experiment_name)
   fprintf(fid_analysis,'%%   smaller than the simulation time specified in the .json file\n');
   fprintf(fid_analysis,'%%   ("global.duration"), like one order of magnitude less. Default is\n');
   fprintf(fid_analysis,'%%   ''sim_duration/20''\n');
-  fprintf(fid_analysis,'time_horizon = %f;\n', sim_duration/20);
+  fprintf(fid_analysis,'time_horizon = %f;\n', sim_duration/1);
   fprintf(fid_analysis,'\n');
   fprintf(fid_analysis,'%% The reference thread should have the following characteristics:\n');
   fprintf(fid_analysis,'%%   (1) the job body is the same as in the simulation\n');

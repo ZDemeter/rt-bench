@@ -1,0 +1,41 @@
+%------------------------------------------------------------------%
+%Guide for running rt-bench on multiple .json files with xlaunch.sh%
+%------------------------------------------------------------------%
+
+1. Create folder for input
+--------------
+##############
+
+Folder should be located in the input folder.
+##############
+
+2. Create .json-files
+--------------
+They should be located in the previously created folder.
+##############
+
+3. Create a runfile that will be sent as arg to the script
+--------------
+Format of runfile: Two rows are used at a time, first row is the location of the .json-file directed from the rt-bench folder, and second line is the name of the test.
+##############
+
+4. Run test
+--------------
+Run the tests with command:
+$./xlaunch.sh <ip> <port> <name> <runfile> <testname>
+##############
+
+%------------------------%
+%After tests are finished%
+%------------------------%
+5. Move the result folders into the testfolder
+--------------
+The testfolder has the same name as the folder created for the inputs and is located in the result folder
+##############
+
+6. Gather outputs
+--------------
+Use make_outputs.sh to gather supply function data from tests. It is run as:
+$make_outputs.sh <runfile>
+It is the same runfile that you created earlier
+##############
