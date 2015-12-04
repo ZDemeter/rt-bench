@@ -1,0 +1,27 @@
+{
+  "resources": 0,
+  "tasks": {
+    "thread1": {
+      "priority": 10,
+      "cpus": [0],
+      "phases": {
+        "m0": { "loops": 100000, "memory": 800000 }
+      }
+    },
+    "thread2": {
+      "priority": 10,
+      "cpus": [0],
+      "phases": {
+        "m1": { "loops": 100000, "memory": 70000 }
+      }
+    }
+  },
+  "global": {
+    "default_policy": "SCHED_OTHER",
+    "duration": 50,
+    "logdir": "./",
+    "logbasename": "rtbench",
+    "lock_pages": true,
+    "ftrace": true
+  }
+}
