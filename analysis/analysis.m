@@ -99,6 +99,7 @@ end
 sim_infile = strcat(experiment_name,'.all.csv');
 sim_data = csvread(sim_infile);
 
+%{
 %% Computing the supply lower bound of the entire platform
 % Original data
 lowb_x = sim_data(:,3); % max separations
@@ -144,6 +145,7 @@ fprintf(fid,'%s,all,SUBF_CONV_IDX,%s\n', experiment_name, mat2str(uppb_sel_conv)
 %   with t spanning over [0,time_horizon]
 [uppb_alpha, uppb_burst] = bestAlphaBurst_upp(uppb_x_clean(uppb_sel_conv),uppb_y_clean(uppb_sel_conv),time_horizon,max_slope);
 fprintf(fid,'%s,all,SUBF_ALPHADELTA,%f,%f\n', experiment_name, uppb_alpha, -uppb_burst/uppb_alpha);
+%}
 
 %% Computing linear bounds with minimum distance
 [best_alpha, best_delta_low, best_delta_upp] = bestAlphaDelta(lowb_x_clean(lowb_sel_conv),lowb_y_clean(lowb_sel_conv),uppb_x_clean(uppb_sel_conv),uppb_y_clean(uppb_sel_conv));

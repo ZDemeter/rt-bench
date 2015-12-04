@@ -33,11 +33,20 @@ $awk '/<pattern>/ {print NR,$0}' <file.txt>
 
 Also, remove pattern for all lines
 $awk '{print NR,$0}' <file.txt>
+------------------------------------------
+Count files in a directory
+$ls -1 | wc -l
+(Note 1(one))
+
+Can also filter files:
+$ls spec* -1 | wc -l
 
 ------------------------------------------
 Some specific commands I've used:
  Printing the input file:
 $for i in {15..40..5}; do for j in {1..5}; do printf "%s\n%s\n" input/TimedBig_tests/v10_${i}sec.json v10_${i}sec_${j} >> timedbig_runtests.txt; done; done
+
+for m1 in {10..100..10}; do for m2 in {10..100..10}; do sed -i "s/700/${m1}000/g;s/memory\": 1000000/memory\": ${m2}000/g" m${m1}_${m2}.json;done;done
 
  Adding values to file mirroring filename(patterned)
 $for v in {3000..300000..3000}; do sed -i "15 s/10000/${v}/g" m1000l_${v}.json; done

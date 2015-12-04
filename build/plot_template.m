@@ -1,6 +1,7 @@
 %%Octave
 
-line=0;
+clear all
+read_line=0;
 line_i=1;
 
 #Input Files#
@@ -13,10 +14,11 @@ line_i=1;
 
 #Static Lines#
 
-hold on
 #Plotting Curve#
 
 #Plotting Line#
 
-print(output_name, '-depsc');
-hold off
+#Set Labels#
+
+#Save Output#
+clear all

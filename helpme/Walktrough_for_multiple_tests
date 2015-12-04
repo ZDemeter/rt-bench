@@ -16,7 +16,7 @@ They should be located in the previously created folder.
 
 3. Create a runfile that will be sent as arg to the script
 --------------
-Format of runfile: Two rows are used at a time, first row is the location of the .json-file directed from the rt-bench folder, and second line is the name of the test.
+Format of runfile: Two rows are used at a time, first row is the location of the .json-file directed from the rt-bench folder, and second line is the name of the test. (There must be an empty line at end of document.)
 ##############
 
 4. Run test
