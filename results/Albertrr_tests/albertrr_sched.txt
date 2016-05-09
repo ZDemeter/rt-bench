@@ -1,0 +1,347 @@
+
+Date for attempted start: 
+Wednesday - 2015-12-09
+[TLOG]Running test: [Albertrr_tests]
+[TLOG]All files found! Number of tests that will execute: 64
+[TLOG]Starting test sequence...
+
+[TLOG]From [input/Albertrr_tests/v100_mem10.json] create [v100_mem10]
+[TLOG]Initializing test 1 at time: 13:16:49
+[TLOG]Test finished at time: 13:20:01
+[TLOG]Number of tests left to be run: 63
+
+[TLOG]From [input/Albertrr_tests/v100_mem20.json] create [v100_mem20]
+[TLOG]Initializing test 2 at time: 13:20:02
+[TLOG]Test finished at time: 13:22:58
+[TLOG]Number of tests left to be run: 62
+
+[TLOG]From [input/Albertrr_tests/v100_mem30.json] create [v100_mem30]
+[TLOG]Initializing test 3 at time: 13:22:59
+[TLOG]Test finished at time: 13:25:55
+[TLOG]Number of tests left to be run: 61
+
+[TLOG]From [input/Albertrr_tests/v100_mem40.json] create [v100_mem40]
+[TLOG]Initializing test 4 at time: 13:25:56
+[TLOG]Test finished at time: 13:29:07
+[TLOG]Number of tests left to be run: 60
+
+[TLOG]From [input/Albertrr_tests/v100_mem50.json] create [v100_mem50]
+[TLOG]Initializing test 5 at time: 13:29:08
+[TLOG]Test finished at time: 13:31:39
+[TLOG]Number of tests left to be run: 59
+
+[TLOG]From [input/Albertrr_tests/v100_mem60.json] create [v100_mem60]
+[TLOG]Initializing test 6 at time: 13:31:40
+[TLOG]Test finished at time: 13:34:09
+[TLOG]Number of tests left to be run: 58
+
+[TLOG]From [input/Albertrr_tests/v100_mem70.json] create [v100_mem70]
+[TLOG]Initializing test 7 at time: 13:34:10
+[TLOG]Test finished at time: 13:35:55
+[TLOG]Number of tests left to be run: 57
+
+[TLOG]From [input/Albertrr_tests/v100_mem80.json] create [v100_mem80]
+[TLOG]Initializing test 8 at time: 13:35:56
+[TLOG]Test finished at time: 13:38:19
+[TLOG]Number of tests left to be run: 56
+
+[TLOG]From [input/Albertrr_tests/v100_mem90.json] create [v100_mem90]
+[TLOG]Initializing test 9 at time: 13:38:20
+[TLOG]Test finished at time: 13:40:56
+[TLOG]Number of tests left to be run: 55
+
+[TLOG]From [input/Albertrr_tests/v100_mem100.json] create [v100_mem100]
+[TLOG]Initializing test 10 at time: 13:40:57
+[TLOG]Test finished at time: 13:44:10
+[TLOG]Number of tests left to be run: 54
+
+[TLOG]From [input/Albertrr_tests/v100_mem200.json] create [v100_mem200]
+[TLOG]Initializing test 11 at time: 13:44:11
+[TLOG]Test finished at time: 13:47:17
+[TLOG]Number of tests left to be run: 53
+
+[TLOG]From [input/Albertrr_tests/v100_mem300.json] create [v100_mem300]
+[TLOG]Initializing test 12 at time: 13:47:18
+[TLOG]Test finished at time: 13:50:37
+[TLOG]Number of tests left to be run: 52
+
+[TLOG]From [input/Albertrr_tests/v100_mem400.json] create [v100_mem400]
+[TLOG]Initializing test 13 at time: 13:50:38
+[TLOG]Test finished at time: 13:53:17
+[TLOG]Number of tests left to be run: 51
+
+[TLOG]From [input/Albertrr_tests/v100_mem500.json] create [v100_mem500]
+[TLOG]Initializing test 14 at time: 13:53:18
+[TLOG]Test finished at time: 13:56:15
+[TLOG]Number of tests left to be run: 50
+
+[TLOG]From [input/Albertrr_tests/v100_mem600.json] create [v100_mem600]
+[TLOG]Initializing test 15 at time: 13:56:16
+[TLOG]Test finished at time: 13:59:18
+[TLOG]Number of tests left to be run: 49
+
+[TLOG]From [input/Albertrr_tests/v100_mem700.json] create [v100_mem700]
+[TLOG]Initializing test 16 at time: 13:59:19
+[TLOG]Test finished at time: 14:00:34
+[TLOG]Number of tests left to be run: 48
+
+[TLOG]From [input/Albertrr_tests/v100_mem800.json] create [v100_mem800]
+[TLOG]Initializing test 17 at time: 14:00:35
+[TLOG]Test finished at time: 14:03:01
+[TLOG]Number of tests left to be run: 47
+
+[TLOG]From [input/Albertrr_tests/v100_mem900.json] create [v100_mem900]
+[TLOG]Initializing test 18 at time: 14:03:02
+[TLOG]Test finished at time: 14:05:44
+[TLOG]Number of tests left to be run: 46
+
+[TLOG]From [input/Albertrr_tests/v100_mem1000.json] create [v100_mem1000]
+[TLOG]Initializing test 19 at time: 14:05:45
+[TLOG]Test finished at time: 14:08:30
+[TLOG]Number of tests left to be run: 45
+
+[TLOG]From [input/Albertrr_tests/v100_mem2000.json] create [v100_mem2000]
+[TLOG]Initializing test 20 at time: 14:08:31
+[TLOG]Test finished at time: 14:11:26
+[TLOG]Number of tests left to be run: 44
+
+[TLOG]From [input/Albertrr_tests/v100_mem3000.json] create [v100_mem3000]
+[TLOG]Initializing test 21 at time: 14:11:27
+[TLOG]Test finished at time: 14:14:11
+[TLOG]Number of tests left to be run: 43
+
+[TLOG]From [input/Albertrr_tests/v100_mem4000.json] create [v100_mem4000]
+[TLOG]Initializing test 22 at time: 14:14:12
+[TLOG]Test finished at time: 14:16:49
+[TLOG]Number of tests left to be run: 42
+
+[TLOG]From [input/Albertrr_tests/v100_mem5000.json] create [v100_mem5000]
+[TLOG]Initializing test 23 at time: 14:16:50
+[TLOG]Test finished at time: 14:19:54
+[TLOG]Number of tests left to be run: 41
+
+[TLOG]From [input/Albertrr_tests/v100_mem6000.json] create [v100_mem6000]
+[TLOG]Initializing test 24 at time: 14:19:55
+[TLOG]Test finished at time: 14:22:24
+[TLOG]Number of tests left to be run: 40
+
+[TLOG]From [input/Albertrr_tests/v100_mem7000.json] create [v100_mem7000]
+[TLOG]Initializing test 25 at time: 14:22:25
+[TLOG]Test finished at time: 14:25:06
+[TLOG]Number of tests left to be run: 39
+
+[TLOG]From [input/Albertrr_tests/v100_mem8000.json] create [v100_mem8000]
+[TLOG]Initializing test 26 at time: 14:25:07
+[TLOG]Test finished at time: 14:28:08
+[TLOG]Number of tests left to be run: 38
+
+[TLOG]From [input/Albertrr_tests/v100_mem9000.json] create [v100_mem9000]
+[TLOG]Initializing test 27 at time: 14:28:09
+[TLOG]Test finished at time: 14:31:22
+[TLOG]Number of tests left to be run: 37
+
+[TLOG]From [input/Albertrr_tests/v100_mem10000.json] create [v100_mem10000]
+[TLOG]Initializing test 28 at time: 14:31:23
+[TLOG]Test finished at time: 14:34:14
+[TLOG]Number of tests left to be run: 36
+
+[TLOG]From [input/Albertrr_tests/v100_mem20000.json] create [v100_mem20000]
+[TLOG]Initializing test 29 at time: 14:34:15
+[TLOG]Test finished at time: 14:37:42
+[TLOG]Number of tests left to be run: 35
+
+[TLOG]From [input/Albertrr_tests/v100_mem30000.json] create [v100_mem30000]
+[TLOG]Initializing test 30 at time: 14:37:43
+[TLOG]Test finished at time: 14:40:54
+[TLOG]Number of tests left to be run: 34
+
+[TLOG]From [input/Albertrr_tests/v100_mem40000.json] create [v100_mem40000]
+[TLOG]Initializing test 31 at time: 14:40:55
+[TLOG]Test finished at time: 14:43:54
+[TLOG]Number of tests left to be run: 33
+
+[TLOG]From [input/Albertrr_tests/v100_mem50000.json] create [v100_mem50000]
+[TLOG]Initializing test 32 at time: 14:43:55
+[TLOG]Test finished at time: 14:46:39
+[TLOG]Number of tests left to be run: 32
+
+[TLOG]From [input/Albertrr_tests/v100_mem60000.json] create [v100_mem60000]
+[TLOG]Initializing test 33 at time: 14:46:40
+[TLOG]Test finished at time: 14:49:27
+[TLOG]Number of tests left to be run: 31
+
+[TLOG]From [input/Albertrr_tests/v100_mem70000.json] create [v100_mem70000]
+[TLOG]Initializing test 34 at time: 14:49:28
+[TLOG]Test finished at time: 14:52:21
+[TLOG]Number of tests left to be run: 30
+
+[TLOG]From [input/Albertrr_tests/v100_mem80000.json] create [v100_mem80000]
+[TLOG]Initializing test 35 at time: 14:52:22
+[TLOG]Test finished at time: 14:54:59
+[TLOG]Number of tests left to be run: 29
+
+[TLOG]From [input/Albertrr_tests/v100_mem90000.json] create [v100_mem90000]
+[TLOG]Initializing test 36 at time: 14:55:00
+[TLOG]Test finished at time: 14:57:41
+[TLOG]Number of tests left to be run: 28
+
+[TLOG]From [input/Albertrr_tests/v100_mem100000.json] create [v100_mem100000]
+[TLOG]Initializing test 37 at time: 14:57:42
+[TLOG]Test finished at time: 14:59:11
+[TLOG]Number of tests left to be run: 27
+
+[TLOG]From [input/Albertrr_tests/v100_mem200000.json] create [v100_mem200000]
+[TLOG]Initializing test 38 at time: 14:59:12
+[TLOG]Test finished at time: 15:00:38
+[TLOG]Number of tests left to be run: 26
+
+[TLOG]From [input/Albertrr_tests/v100_mem300000.json] create [v100_mem300000]
+[TLOG]Initializing test 39 at time: 15:00:39
+[TLOG]Test finished at time: 15:02:04
+[TLOG]Number of tests left to be run: 25
+
+[TLOG]From [input/Albertrr_tests/v100_mem400000.json] create [v100_mem400000]
+[TLOG]Initializing test 40 at time: 15:02:05
+[TLOG]Test finished at time: 15:03:29
+[TLOG]Number of tests left to be run: 24
+
+[TLOG]From [input/Albertrr_tests/v100_mem500000.json] create [v100_mem500000]
+[TLOG]Initializing test 41 at time: 15:03:30
+[TLOG]Test failed at time: 15:04:54
+[TLOG]Test [FAILED] and is being rerun(slbf_a=[0.911566], slbf_d=[2.913558], subf_a=[0.910814], subf_d=[0.022341])
+
+[TLOG]From [input/Albertrr_tests/v100_mem500000.json] create [v100_mem500000]
+[TLOG]Initializing test 41 at time: 15:04:55
+[TLOG]Test finished at time: 15:06:15
+[TLOG]Number of tests left to be run: 23
+
+[TLOG]From [input/Albertrr_tests/v100_mem600000.json] create [v100_mem600000]
+[TLOG]Initializing test 42 at time: 15:06:16
+[TLOG]Test failed at time: 15:07:43
+[TLOG]Test [FAILED] and is being rerun(slbf_a=[0.901560], slbf_d=[2.827010], subf_a=[0.902577], subf_d=[0.017199])
+
+[TLOG]From [input/Albertrr_tests/v100_mem600000.json] create [v100_mem600000]
+[TLOG]Initializing test 42 at time: 15:07:44
+[TLOG]Test failed at time: 15:09:09
+[TLOG]Test [FAILED] and is being rerun(slbf_a=[0.887725], slbf_d=[2.777264], subf_a=[0.887076], subf_d=[0.038950])
+
+[TLOG]From [input/Albertrr_tests/v100_mem600000.json] create [v100_mem600000]
+[TLOG]Initializing test 42 at time: 15:09:10
+[TLOG]Test finished at time: 15:10:35
+[TLOG]Number of tests left to be run: 22
+
+[TLOG]From [input/Albertrr_tests/v100_mem700000.json] create [v100_mem700000]
+[TLOG]Initializing test 43 at time: 15:10:36
+[TLOG]Test finished at time: 15:11:58
+[TLOG]Number of tests left to be run: 21
+
+[TLOG]From [input/Albertrr_tests/v100_mem800000.json] create [v100_mem800000]
+[TLOG]Initializing test 44 at time: 15:11:59
+[TLOG]Test finished at time: 15:13:25
+[TLOG]Number of tests left to be run: 20
+
+[TLOG]From [input/Albertrr_tests/v100_mem900000.json] create [v100_mem900000]
+[TLOG]Initializing test 45 at time: 15:13:26
+[TLOG]Test finished at time: 15:14:49
+[TLOG]Number of tests left to be run: 19
+
+[TLOG]From [input/Albertrr_tests/v100_mem1000000.json] create [v100_mem1000000]
+[TLOG]Initializing test 46 at time: 15:14:50
+[TLOG]Test failed at time: 15:16:14
+[TLOG]Test [FAILED] and is being rerun(slbf_a=[0.918949], slbf_d=[5.201919], subf_a=[0.666128], subf_d=[11.436220])
+
+[TLOG]From [input/Albertrr_tests/v100_mem1000000.json] create [v100_mem1000000]
+[TLOG]Initializing test 46 at time: 15:16:15
+[TLOG]Test finished at time: 15:17:36
+[TLOG]Number of tests left to be run: 18
+
+[TLOG]From [input/Albertrr_tests/v100_mem2000000.json] create [v100_mem2000000]
+[TLOG]Initializing test 47 at time: 15:17:37
+[TLOG]Test finished at time: 15:18:59
+[TLOG]Number of tests left to be run: 17
+
+[TLOG]From [input/Albertrr_tests/v100_mem3000000.json] create [v100_mem3000000]
+[TLOG]Initializing test 48 at time: 15:19:00
+[TLOG]Test finished at time: 15:21:09
+[TLOG]Number of tests left to be run: 16
+
+[TLOG]From [input/Albertrr_tests/v100_mem4000000.json] create [v100_mem4000000]
+[TLOG]Initializing test 49 at time: 15:21:10
+[TLOG]Test finished at time: 15:23:46
+[TLOG]Number of tests left to be run: 15
+
+[TLOG]From [input/Albertrr_tests/v100_mem5000000.json] create [v100_mem5000000]
+[TLOG]Initializing test 50 at time: 15:23:47
+[TLOG]Test finished at time: 15:26:22
+[TLOG]Number of tests left to be run: 14
+
+[TLOG]From [input/Albertrr_tests/v100_mem6000000.json] create [v100_mem6000000]
+[TLOG]Initializing test 51 at time: 15:26:23
+[TLOG]Test finished at time: 15:29:40
+[TLOG]Number of tests left to be run: 13
+
+[TLOG]From [input/Albertrr_tests/v100_mem7000000.json] create [v100_mem7000000]
+[TLOG]Initializing test 52 at time: 15:29:41
+[TLOG]Test finished at time: 15:32:39
+[TLOG]Number of tests left to be run: 12
+
+[TLOG]From [input/Albertrr_tests/v100_mem8000000.json] create [v100_mem8000000]
+[TLOG]Initializing test 53 at time: 15:32:40
+[TLOG]Test finished at time: 15:35:09
+[TLOG]Number of tests left to be run: 11
+
+[TLOG]From [input/Albertrr_tests/v100_mem9000000.json] create [v100_mem9000000]
+[TLOG]Initializing test 54 at time: 15:35:10
+[TLOG]Test finished at time: 15:38:15
+[TLOG]Number of tests left to be run: 10
+
+[TLOG]From [input/Albertrr_tests/v100_mem10000000.json] create [v100_mem10000000]
+[TLOG]Initializing test 55 at time: 15:38:16
+[TLOG]Test finished at time: 15:41:21
+[TLOG]Number of tests left to be run: 9
+
+[TLOG]From [input/Albertrr_tests/v100_mem20000000.json] create [v100_mem20000000]
+[TLOG]Initializing test 56 at time: 15:41:22
+[TLOG]Test finished at time: 15:43:57
+[TLOG]Number of tests left to be run: 8
+
+[TLOG]From [input/Albertrr_tests/v100_mem30000000.json] create [v100_mem30000000]
+[TLOG]Initializing test 57 at time: 15:43:58
+[TLOG]Test finished at time: 15:46:52
+[TLOG]Number of tests left to be run: 7
+
+[TLOG]From [input/Albertrr_tests/v100_mem40000000.json] create [v100_mem40000000]
+[TLOG]Initializing test 58 at time: 15:46:53
+[TLOG]Test finished at time: 15:49:48
+[TLOG]Number of tests left to be run: 6
+
+[TLOG]From [input/Albertrr_tests/v100_mem50000000.json] create [v100_mem50000000]
+[TLOG]Initializing test 59 at time: 15:49:49
+[TLOG]Test finished at time: 15:52:34
+[TLOG]Number of tests left to be run: 5
+
+[TLOG]From [input/Albertrr_tests/v100_mem60000000.json] create [v100_mem60000000]
+[TLOG]Initializing test 60 at time: 15:52:35
+[TLOG]Test finished at time: 15:55:02
+[TLOG]Number of tests left to be run: 4
+
+[TLOG]From [input/Albertrr_tests/v100_mem70000000.json] create [v100_mem70000000]
+[TLOG]Initializing test 61 at time: 15:55:03
+[TLOG]Test finished at time: 15:58:17
+[TLOG]Number of tests left to be run: 3
+
+[TLOG]From [input/Albertrr_tests/v100_mem80000000.json] create [v100_mem80000000]
+[TLOG]Initializing test 62 at time: 15:58:18
+[TLOG]Test finished at time: 16:01:08
+[TLOG]Number of tests left to be run: 2
+
+[TLOG]From [input/Albertrr_tests/v100_mem90000000.json] create [v100_mem90000000]
+[TLOG]Initializing test 63 at time: 16:01:09
+[TLOG]Test finished at time: 16:03:44
+[TLOG]Number of tests left to be run: 1
+
+[TLOG]From [input/Albertrr_tests/v100_mem100000000.json] create [v100_mem100000000]
+[TLOG]Initializing test 64 at time: 16:03:45
+[TLOG]Test finished at time: 16:06:33
+[TLOG]Number of tests left to be run: 0
+

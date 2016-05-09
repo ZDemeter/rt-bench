@@ -1,0 +1,17 @@
+
+Date for attempted start: 
+Monday - 2015-09-28
+[TLOG]Running test: [Compare_tests]
+[TLOG]All files found! Number of tests that will execute: 2
+[TLOG]Starting test sequence...
+
+[TLOG]From [input/Compare_tests/v100_t1.json] create [v100_t1]
+[TLOG]Initializing test 1 at time: 15:52:39
+[TLOG]Test finished at time: 15:53:54
+[TLOG]Number of tests left to be run: 1
+
+[TLOG]From [input/Compare_tests/v100_t2.json] create [v100_t2]
+[TLOG]Initializing test 2 at time: 15:53:55
+[TLOG]Test finished at time: 15:55:08
+[TLOG]Number of tests left to be run: 0
+

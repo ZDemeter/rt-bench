@@ -40,6 +40,18 @@ $ls -1 | wc -l
 
 Can also filter files:
 $ls spec* -1 | wc -l
+------------------------------------------
+Run all matlab files in a folder
+$varname1=dir(<Folder dir>/*.m);
+for i = varname1'
+	run(strcat(<Folder dir>,i.name))
+endfor
+
+example
+files = dir("results/Albert_tests/Plot/*.m);
+for f=files'
+	run(strcat("results/Albert_tests/Plot/",f.name))
+endfor
 
 ------------------------------------------
 Some specific commands I've used:
@@ -52,4 +64,5 @@ for m1 in {10..100..10}; do for m2 in {10..100..10}; do sed -i "s/700/${m1}000/g
 $for v in {3000..300000..3000}; do sed -i "15 s/10000/${v}/g" m1000l_${v}.json; done
 
 ------------------------------------------
+
 

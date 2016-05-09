@@ -1,0 +1,17 @@
+
+Date for attempted start: 
+Thursday - 2015-12-10
+[TLOG]Running test: [Bartrr_tests]
+[TLOG]All files found! Number of tests that will execute: 64
+[TLOG]Starting test sequence...
+
+[TLOG]From [input/Bartrr_tests/v100_mem10.json] create [v100_mem10]
+[TLOG]Initializing test 1 at time: 10:19:03
+[TLOG]Test failed at time: 10:19:12
+[TLOG]Test [FAILED] and is being rerun(slbf_a=[], slbf_d=[], subf_a=[], subf_d=[])
+
+[TLOG]From [input/Bartrr_tests/v100_mem10.json] create [v100_mem10]
+[TLOG]Initializing test 1 at time: 10:19:13
+[TLOG]Test failed at time: 10:19:30
+[TLOG]Test [FAILED] and is being rerun(slbf_a=[], slbf_d=[], subf_a=[], subf_d=[])
+

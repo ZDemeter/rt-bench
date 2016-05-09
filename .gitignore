@@ -1,5 +1,6 @@
 bin
-results
+results/*/m*/
+results/*/v*/
 *.log
 *.dat
 .DS_Store

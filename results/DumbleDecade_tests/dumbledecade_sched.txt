@@ -1,0 +1,334 @@
+
+Date for attempted start: 
+Wednesday - 2015-11-04
+[TLOG]Running test: [DumbleDecade_tests]
+[TLOG]All files found! Number of tests that will execute: 209
+[TLOG]Starting test sequence...
+
+[TLOG]From [input/DumbleDecade_tests/m100_10.json] create [m100_10]
+[TLOG]Initializing test 1 at time: 11:06:38
+[TLOG]Test finished at time: 11:11:53
+[TLOG]Number of tests left to be run: 208
+
+[TLOG]From [input/DumbleDecade_tests/m100_20.json] create [m100_20]
+[TLOG]Initializing test 2 at time: 11:11:54
+[TLOG]Test finished at time: 11:15:56
+[TLOG]Number of tests left to be run: 207
+
+[TLOG]From [input/DumbleDecade_tests/m100_30.json] create [m100_30]
+[TLOG]Initializing test 3 at time: 11:15:57
+[TLOG]Test finished at time: 11:20:52
+[TLOG]Number of tests left to be run: 206
+
+[TLOG]From [input/DumbleDecade_tests/m100_40.json] create [m100_40]
+[TLOG]Initializing test 4 at time: 11:20:53
+[TLOG]Test finished at time: 11:25:25
+[TLOG]Number of tests left to be run: 205
+
+[TLOG]From [input/DumbleDecade_tests/m100_50.json] create [m100_50]
+[TLOG]Initializing test 5 at time: 11:25:26
+[TLOG]Test finished at time: 11:30:39
+[TLOG]Number of tests left to be run: 204
+
+[TLOG]From [input/DumbleDecade_tests/m100_60.json] create [m100_60]
+[TLOG]Initializing test 6 at time: 11:30:40
+[TLOG]Test finished at time: 11:35:41
+[TLOG]Number of tests left to be run: 203
+
+[TLOG]From [input/DumbleDecade_tests/m100_70.json] create [m100_70]
+[TLOG]Initializing test 7 at time: 11:35:42
+[TLOG]Test finished at time: 11:40:31
+[TLOG]Number of tests left to be run: 202
+
+[TLOG]From [input/DumbleDecade_tests/m100_80.json] create [m100_80]
+[TLOG]Initializing test 8 at time: 11:40:32
+[TLOG]Test finished at time: 11:44:46
+[TLOG]Number of tests left to be run: 201
+
+[TLOG]From [input/DumbleDecade_tests/m100_90.json] create [m100_90]
+[TLOG]Initializing test 9 at time: 11:44:47
+[TLOG]Test finished at time: 11:49:01
+[TLOG]Number of tests left to be run: 200
+
+[TLOG]From [input/DumbleDecade_tests/m100_100.json] create [m100_100]
+[TLOG]Initializing test 10 at time: 11:49:02
+[TLOG]Test finished at time: 11:54:07
+[TLOG]Number of tests left to be run: 199
+
+[TLOG]From [input/DumbleDecade_tests/m110_10.json] create [m110_10]
+[TLOG]Initializing test 11 at time: 11:54:08
+[TLOG]Test finished at time: 11:59:43
+[TLOG]Number of tests left to be run: 198
+
+[TLOG]From [input/DumbleDecade_tests/m110_20.json] create [m110_20]
+[TLOG]Initializing test 12 at time: 11:59:44
+[TLOG]Test finished at time: 12:06:41
+[TLOG]Number of tests left to be run: 197
+
+[TLOG]From [input/DumbleDecade_tests/m110_30.json] create [m110_30]
+[TLOG]Initializing test 13 at time: 12:06:42
+[TLOG]Test finished at time: 12:11:29
+[TLOG]Number of tests left to be run: 196
+
+[TLOG]From [input/DumbleDecade_tests/m110_40.json] create [m110_40]
+[TLOG]Initializing test 14 at time: 12:11:30
+[TLOG]Test finished at time: 12:15:59
+[TLOG]Number of tests left to be run: 195
+
+[TLOG]From [input/DumbleDecade_tests/m110_50.json] create [m110_50]
+[TLOG]Initializing test 15 at time: 12:16:00
+[TLOG]Test finished at time: 12:20:29
+[TLOG]Number of tests left to be run: 194
+
+[TLOG]From [input/DumbleDecade_tests/m110_60.json] create [m110_60]
+[TLOG]Initializing test 16 at time: 12:20:31
+[TLOG]Test finished at time: 12:24:30
+[TLOG]Number of tests left to be run: 193
+
+[TLOG]From [input/DumbleDecade_tests/m110_70.json] create [m110_70]
+[TLOG]Initializing test 17 at time: 12:24:31
+[TLOG]Test finished at time: 12:30:50
+[TLOG]Number of tests left to be run: 192
+
+[TLOG]From [input/DumbleDecade_tests/m110_80.json] create [m110_80]
+[TLOG]Initializing test 18 at time: 12:30:51
+[TLOG]Test finished at time: 12:32:46
+[TLOG]Number of tests left to be run: 191
+
+[TLOG]From [input/DumbleDecade_tests/m110_90.json] create [m110_90]
+[TLOG]Initializing test 19 at time: 12:32:47
+[TLOG]Test finished at time: 12:36:13
+[TLOG]Number of tests left to be run: 190
+
+[TLOG]From [input/DumbleDecade_tests/m110_100.json] create [m110_100]
+[TLOG]Initializing test 20 at time: 12:36:14
+[TLOG]Test finished at time: 12:41:29
+[TLOG]Number of tests left to be run: 189
+
+[TLOG]From [input/DumbleDecade_tests/m120_10.json] create [m120_10]
+[TLOG]Initializing test 21 at time: 12:41:30
+[TLOG]Test finished at time: 12:46:40
+[TLOG]Number of tests left to be run: 188
+
+[TLOG]From [input/DumbleDecade_tests/m120_20.json] create [m120_20]
+[TLOG]Initializing test 22 at time: 12:46:41
+[TLOG]Test finished at time: 12:51:23
+[TLOG]Number of tests left to be run: 187
+
+[TLOG]From [input/DumbleDecade_tests/m120_30.json] create [m120_30]
+[TLOG]Initializing test 23 at time: 12:51:24
+[TLOG]Test finished at time: 12:57:58
+[TLOG]Number of tests left to be run: 186
+
+[TLOG]From [input/DumbleDecade_tests/m120_40.json] create [m120_40]
+[TLOG]Initializing test 24 at time: 12:57:59
+[TLOG]Test finished at time: 13:00:23
+[TLOG]Number of tests left to be run: 185
+
+[TLOG]From [input/DumbleDecade_tests/m120_50.json] create [m120_50]
+[TLOG]Initializing test 25 at time: 13:00:24
+[TLOG]Test finished at time: 13:04:45
+[TLOG]Number of tests left to be run: 184
+
+[TLOG]From [input/DumbleDecade_tests/m120_60.json] create [m120_60]
+[TLOG]Initializing test 26 at time: 13:04:47
+[TLOG]Test finished at time: 13:07:25
+[TLOG]Number of tests left to be run: 183
+
+[TLOG]From [input/DumbleDecade_tests/m120_70.json] create [m120_70]
+[TLOG]Initializing test 27 at time: 13:07:26
+[TLOG]Test finished at time: 13:12:02
+[TLOG]Number of tests left to be run: 182
+
+[TLOG]From [input/DumbleDecade_tests/m120_80.json] create [m120_80]
+[TLOG]Initializing test 28 at time: 13:12:03
+[TLOG]Test finished at time: 13:15:51
+[TLOG]Number of tests left to be run: 181
+
+[TLOG]From [input/DumbleDecade_tests/m120_90.json] create [m120_90]
+[TLOG]Initializing test 29 at time: 13:15:52
+[TLOG]Test finished at time: 13:22:59
+[TLOG]Number of tests left to be run: 180
+
+[TLOG]From [input/DumbleDecade_tests/m120_100.json] create [m120_100]
+[TLOG]Initializing test 30 at time: 13:23:00
+[TLOG]Test finished at time: 13:24:28
+[TLOG]Number of tests left to be run: 179
+
+[TLOG]From [input/DumbleDecade_tests/m130_10.json] create [m130_10]
+[TLOG]Initializing test 31 at time: 13:24:29
+[TLOG]Test finished at time: 13:29:10
+[TLOG]Number of tests left to be run: 178
+
+[TLOG]From [input/DumbleDecade_tests/m130_20.json] create [m130_20]
+[TLOG]Initializing test 32 at time: 13:29:11
+[TLOG]Test finished at time: 13:34:42
+[TLOG]Number of tests left to be run: 177
+
+[TLOG]From [input/DumbleDecade_tests/m130_30.json] create [m130_30]
+[TLOG]Initializing test 33 at time: 13:34:43
+[TLOG]Test finished at time: 13:39:29
+[TLOG]Number of tests left to be run: 176
+
+[TLOG]From [input/DumbleDecade_tests/m130_40.json] create [m130_40]
+[TLOG]Initializing test 34 at time: 13:39:30
+[TLOG]Test finished at time: 13:41:54
+[TLOG]Number of tests left to be run: 175
+
+[TLOG]From [input/DumbleDecade_tests/m130_50.json] create [m130_50]
+[TLOG]Initializing test 35 at time: 13:41:55
+[TLOG]Test finished at time: 13:43:54
+[TLOG]Number of tests left to be run: 174
+
+[TLOG]From [input/DumbleDecade_tests/m130_60.json] create [m130_60]
+[TLOG]Initializing test 36 at time: 13:43:55
+[TLOG]Test finished at time: 13:47:03
+[TLOG]Number of tests left to be run: 173
+
+[TLOG]From [input/DumbleDecade_tests/m130_70.json] create [m130_70]
+[TLOG]Initializing test 37 at time: 13:47:04
+[TLOG]Test finished at time: 13:52:11
+[TLOG]Number of tests left to be run: 172
+
+[TLOG]From [input/DumbleDecade_tests/m130_80.json] create [m130_80]
+[TLOG]Initializing test 38 at time: 13:52:12
+[TLOG]Test finished at time: 13:57:46
+[TLOG]Number of tests left to be run: 171
+
+[TLOG]From [input/DumbleDecade_tests/m130_90.json] create [m130_90]
+[TLOG]Initializing test 39 at time: 13:57:47
+[TLOG]Test finished at time: 14:02:46
+[TLOG]Number of tests left to be run: 170
+
+[TLOG]From [input/DumbleDecade_tests/m130_100.json] create [m130_100]
+[TLOG]Initializing test 40 at time: 14:02:47
+[TLOG]Test finished at time: 14:08:17
+[TLOG]Number of tests left to be run: 169
+
+[TLOG]From [input/DumbleDecade_tests/m140_10.json] create [m140_10]
+[TLOG]Initializing test 41 at time: 14:08:18
+[TLOG]Test finished at time: 14:11:24
+[TLOG]Number of tests left to be run: 168
+
+[TLOG]From [input/DumbleDecade_tests/m140_20.json] create [m140_20]
+[TLOG]Initializing test 42 at time: 14:11:25
+[TLOG]Test finished at time: 14:15:00
+[TLOG]Number of tests left to be run: 167
+
+[TLOG]From [input/DumbleDecade_tests/m140_30.json] create [m140_30]
+[TLOG]Initializing test 43 at time: 14:15:01
+[TLOG]Test finished at time: 14:19:28
+[TLOG]Number of tests left to be run: 166
+
+[TLOG]From [input/DumbleDecade_tests/m140_40.json] create [m140_40]
+[TLOG]Initializing test 44 at time: 14:19:29
+[TLOG]Test finished at time: 14:25:30
+[TLOG]Number of tests left to be run: 165
+
+[TLOG]From [input/DumbleDecade_tests/m140_50.json] create [m140_50]
+[TLOG]Initializing test 45 at time: 14:25:31
+[TLOG]Test finished at time: 14:31:01
+[TLOG]Number of tests left to be run: 164
+
+[TLOG]From [input/DumbleDecade_tests/m140_60.json] create [m140_60]
+[TLOG]Initializing test 46 at time: 14:31:02
+[TLOG]Test finished at time: 14:35:10
+[TLOG]Number of tests left to be run: 163
+
+[TLOG]From [input/DumbleDecade_tests/m140_70.json] create [m140_70]
+[TLOG]Initializing test 47 at time: 14:35:11
+[TLOG]Test finished at time: 14:39:29
+[TLOG]Number of tests left to be run: 162
+
+[TLOG]From [input/DumbleDecade_tests/m140_80.json] create [m140_80]
+[TLOG]Initializing test 48 at time: 14:39:30
+[TLOG]Test finished at time: 14:44:31
+[TLOG]Number of tests left to be run: 161
+
+[TLOG]From [input/DumbleDecade_tests/m140_90.json] create [m140_90]
+[TLOG]Initializing test 49 at time: 14:44:32
+[TLOG]Test finished at time: 14:50:20
+[TLOG]Number of tests left to be run: 160
+
+[TLOG]From [input/DumbleDecade_tests/m140_100.json] create [m140_100]
+[TLOG]Initializing test 50 at time: 14:50:21
+[TLOG]Test finished at time: 14:54:30
+[TLOG]Number of tests left to be run: 159
+
+[TLOG]From [input/DumbleDecade_tests/m150_10.json] create [m150_10]
+[TLOG]Initializing test 51 at time: 14:54:31
+[TLOG]Test finished at time: 15:01:01
+[TLOG]Number of tests left to be run: 158
+
+[TLOG]From [input/DumbleDecade_tests/m150_20.json] create [m150_20]
+[TLOG]Initializing test 52 at time: 15:01:02
+[TLOG]Test finished at time: 15:05:38
+[TLOG]Number of tests left to be run: 157
+
+[TLOG]From [input/DumbleDecade_tests/m150_30.json] create [m150_30]
+[TLOG]Initializing test 53 at time: 15:05:39
+[TLOG]Test finished at time: 15:10:35
+[TLOG]Number of tests left to be run: 156
+
+[TLOG]From [input/DumbleDecade_tests/m150_40.json] create [m150_40]
+[TLOG]Initializing test 54 at time: 15:10:36
+[TLOG]Test finished at time: 15:16:15
+[TLOG]Number of tests left to be run: 155
+
+[TLOG]From [input/DumbleDecade_tests/m150_50.json] create [m150_50]
+[TLOG]Initializing test 55 at time: 15:16:16
+[TLOG]Test finished at time: 15:19:37
+[TLOG]Number of tests left to be run: 154
+
+[TLOG]From [input/DumbleDecade_tests/m150_60.json] create [m150_60]
+[TLOG]Initializing test 56 at time: 15:19:38
+[TLOG]Test finished at time: 15:23:29
+[TLOG]Number of tests left to be run: 153
+
+[TLOG]From [input/DumbleDecade_tests/m150_70.json] create [m150_70]
+[TLOG]Initializing test 57 at time: 15:23:30
+[TLOG]Test finished at time: 15:27:39
+[TLOG]Number of tests left to be run: 152
+
+[TLOG]From [input/DumbleDecade_tests/m150_80.json] create [m150_80]
+[TLOG]Initializing test 58 at time: 15:27:40
+[TLOG]Test finished at time: 15:33:29
+[TLOG]Number of tests left to be run: 151
+
+[TLOG]From [input/DumbleDecade_tests/m150_90.json] create [m150_90]
+[TLOG]Initializing test 59 at time: 15:33:30
+[TLOG]Test finished at time: 15:39:13
+[TLOG]Number of tests left to be run: 150
+
+[TLOG]From [input/DumbleDecade_tests/m150_100.json] create [m150_100]
+[TLOG]Initializing test 60 at time: 15:39:14
+[TLOG]Test finished at time: 15:43:58
+[TLOG]Number of tests left to be run: 149
+
+[TLOG]From [input/DumbleDecade_tests/m160_10.json] create [m160_10]
+[TLOG]Initializing test 61 at time: 15:43:59
+[TLOG]Test finished at time: 15:49:53
+[TLOG]Number of tests left to be run: 148
+
+[TLOG]From [input/DumbleDecade_tests/m160_20.json] create [m160_20]
+[TLOG]Initializing test 62 at time: 15:49:54
+[TLOG]Test finished at time: 15:57:53
+[TLOG]Number of tests left to be run: 147
+
+[TLOG]From [input/DumbleDecade_tests/m160_30.json] create [m160_30]
+[TLOG]Initializing test 63 at time: 15:57:54
+[TLOG]Test finished at time: 16:03:21
+[TLOG]Number of tests left to be run: 146
+
+[TLOG]From [input/DumbleDecade_tests/m160_40.json] create [m160_40]
+[TLOG]Initializing test 64 at time: 16:03:22
+[TLOG]Test finished at time: 16:07:29
+[TLOG]Number of tests left to be run: 145
+
+[TLOG]From [input/DumbleDecade_tests/m160_50.json] create [m160_50]
+[TLOG]Initializing test 65 at time: 16:07:30
+[TLOG]Test finished at time: 16:11:44
+[TLOG]Number of tests left to be run: 144
+
+[TLOG]From [input/DumbleDecade_tests/m160_60.json] create [m160_60]
+[TLOG]Initializing test 66 at time: 16:11:45
